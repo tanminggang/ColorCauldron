@@ -1,2 +1,4 @@
 # ColorCauldron
-A color mixing web app that mixes colors based on rgb values.
+Version 0.0
+
+A color-mixing web app that creates colors based on rgb values.
