@@ -40,6 +40,7 @@ body{
     position: relative;
     border-style: outset;
     border-width: thick;
+    background-color: #000000;
 }
 
 #centerPot{
@@ -47,6 +48,18 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#red{
+    background-color: black;
+}
+
+#green{
+    background-color: black;
+}
+
+#blue{
+    background-color: black;
 }
 
 @-webkit-keyframes spinnerRotate

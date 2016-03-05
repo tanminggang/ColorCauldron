@@ -23,15 +23,18 @@
     <div class="mdl-grid container">
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
             <div class="circle" id="red"></div>
+            <input class="mdl-slider mdl-js-slider" id="redSlider" type="range" min="0" max="225" value="0" tabindex="0">
         </div>
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
             <div class="circle" id="green"></div>
+            <input class="mdl-slider mdl-js-slider" id="greenSlider" type="range" min="0" max="225" value="0" tabindex="0">
         </div>
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
             <div class="circle" id="blue"></div>
+            <input class="mdl-slider mdl-js-slider" id="blueSlider" type="range" min="0" max="225" value="0" tabindex="0">
         </div>
     </div>
-
+    <button onclick="changeColor()" class="centered mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Color Change</button>
     <script src="bower_components/material-design-lite/material.min.js"></script>
     <script src="colors.js"></script>
 </body>
