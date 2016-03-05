@@ -30,3 +30,22 @@ function initColor(){
     blue = 0;
     document.getElementById("myLink").style.color = "rgb("+red+","+green+","+blue+")";
 }
+
+//The variables for color percentage values and the RGB color associated with it.
+var colorPercRed = 10;
+var colorInR = (255*colorPercRed)/100;
+var colorPercGreen = 10;
+var colorInG = (255*colorPercGreen)/100;
+var colorPercBlue = 10;
+var colorInB = (255*colorPercBlue)/100;
+
+var form = '<form action="#">' +
+    '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">' +
+    '<input class="mdl-textfield__input" type="number" min="0" max="100" value="0" id="redVal">'+
+    '<label class="mdl-textfield__label" for="redVal">Red Value (0-100)</label>' +
+'</div>' +
+'</form>'
+
+function valuePopUp(){
+        document.getElementById("redValueArea").innerHTML += form;
+}

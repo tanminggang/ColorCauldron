@@ -8,12 +8,13 @@ The latest stable version of the Color Cauldron will be hosted shortly.
 
 A color-mixing web app that creates colors based on rgb values.
 
-The license on this code is a flexible MIT License.
+The license on this code is the flexible MIT License.
 You may take a look at the code, and if you decide to use it anywhere, please send a link to my website:
 http://www.saaliklok.com.
 
 Thanks!
 
 @saaliklok
+
 www.saaliklok.com
 

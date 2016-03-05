@@ -1,3 +1,5 @@
+/*Object Styling*/
+
 body{
     background-color: #23252d;
     color: #ffffff;
@@ -68,15 +70,28 @@ body{
     color: black;
     height: 60px;
     width: auto;
-    font-family: Oxygen, sans-serif;
 }
 
 .smtext{
     font-size: 150%;
 }
 
+.sansFont{
+    font-family: Oxygen,sans-serif;
+}
+
 .mdl-mini-footer{
     background-color:#0F1324;
+}
+
+
+/*Animations*/
+
+.grow:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 @-webkit-keyframes spinnerRotate

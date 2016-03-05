@@ -22,19 +22,42 @@
     <!--The Pickers-->
     <div class="mdl-grid container">
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
-            <div class="circle" id="red"></div>
+            <div id="redValueArea"></div>
+            <div class="circle grow" onclick="valuePopUp()" id="red">
+               <!-- <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="number" min="0" max="100" value="0" id="redVal">
+                        <label class="mdl-textfield__label" for="redVal">Red Value (0-100)</label>
+                    </div>
+                </form>-->
+
+            </div>
+            <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="red">
+                Click Here to Manually Change RED Color Values
+            </div>
+
             <input class="mdl-slider mdl-js-slider" id="redSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
-            <div class="circle" id="green"></div>
+            <div class="circle grow" id="green"></div>
+            <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="green">
+                Click Here to Manually Change GREEN Color Values
+            </div>
             <input class="mdl-slider mdl-js-slider" id="greenSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
-            <div class="circle" id="blue"></div>
+            <div class="circle grow" id="blue"></div>
+            <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="blue">
+                Click Here to Manually Change BLUE Color Values
+            </div>
             <input class="mdl-slider mdl-js-slider" id="blueSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
     </div>
-    <button onclick="changeColor()" class="smtext centered mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="changeButton">Color Change</button>
+
+    <!--The Button that Changes the Pot's Color-->
+    <button onclick="changeColor()" class="smtext sansFont centered mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="changeButton">Color Change</button>
+
+    <!--Mini-Footer-->
     <footer class="mdl-mini-footer">
         <div class="centered centertext smtext mdl-mini-footer__left-section">
             <div class="mdl-logo"><a id="myLink" href="http://www.saaliklok.com">&copy; Saalik Lokhandwala</a></div>
