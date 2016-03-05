@@ -68,7 +68,15 @@ body{
     color: black;
     height: 60px;
     width: auto;
-    font-family: ExoL, sans-serif;
+    font-family: Oxygen, sans-serif;
+}
+
+.smtext{
+    font-size: 150%;
+}
+
+.mdl-mini-footer{
+    background-color:#0F1324;
 }
 
 @-webkit-keyframes spinnerRotate
@@ -101,5 +109,3 @@ body{
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
 }
-
-

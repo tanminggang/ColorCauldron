@@ -21,10 +21,12 @@ blue.addEventListener("mousemove", function () {
 
 function changeColor(){
     document.getElementById("colorPot").style.backgroundColor = "rgb("+red+","+green+","+blue+")";
+    document.getElementById("myLink").style.color = "rgb("+red+","+green+","+blue+")";
 }
 
 function initColor(){
     red = 0;
     green = 0;
     blue = 0;
+    document.getElementById("myLink").style.color = "rgb("+red+","+green+","+blue+")";
 }
