@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="custom.css">
 </head>
-<body>
+<body onload="initColor()">
     <b><h1 class="centertext">The Color Cauldron</h1></b>
     <p class="centertext">Welcome to the Color Cauldron. To mix your perfect color, choose the red, green and blue values in the circles below.</p>
     <!--The Center Circle-->
@@ -23,18 +23,24 @@
     <div class="mdl-grid container">
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
             <div class="circle" id="red"></div>
-            <input class="mdl-slider mdl-js-slider" id="redSlider" type="range" min="0" max="225" value="0" tabindex="0">
+            <input class="mdl-slider mdl-js-slider" id="redSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
             <div class="circle" id="green"></div>
-            <input class="mdl-slider mdl-js-slider" id="greenSlider" type="range" min="0" max="225" value="0" tabindex="0">
+            <input class="mdl-slider mdl-js-slider" id="greenSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
             <div class="circle" id="blue"></div>
-            <input class="mdl-slider mdl-js-slider" id="blueSlider" type="range" min="0" max="225" value="0" tabindex="0">
+            <input class="mdl-slider mdl-js-slider" id="blueSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
     </div>
-    <button onclick="changeColor()" class="centered mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Color Change</button>
+    <button onclick="changeColor()" class="centered mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="changeButton">Color Change</button>
+    <footer class="mdl-mini-footer">
+        <div class="centered centertext mdl-mini-footer__left-section">
+            <div class="mdl-logo"><a href="http://www.saaliklok.com">&copy; Saalik Lokhandwala</a></div>
+            <p>Made with Material Design Lite, HTML, CSS, Javascript and a dash of awesomeness.</p>
+        </div>
+    </footer>
     <script src="bower_components/material-design-lite/material.min.js"></script>
     <script src="colors.js"></script>
 </body>
