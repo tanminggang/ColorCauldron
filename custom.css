@@ -12,11 +12,22 @@ body{
     font-family: ExoL, sans-serif;
     text-align:center;
 }
+.centered{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
 .circle{
     border-radius: 50%;
     width: 200px;
     height: 200px;
     background-color:dodgerblue;
+}
+
+.container{
+    padding-left: 5%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #colorPot{
