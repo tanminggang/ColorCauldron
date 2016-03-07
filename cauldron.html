@@ -13,7 +13,7 @@
     <p class="centertext">Welcome to the Color Cauldron. To mix your perfect color, choose the red, green and blue values in the circles below.</p>
     <!--The Center Circle-->
     <div class="mdl-grid">
-        <div class="spinning circle" id="colorPot">
+        <div class="spinning circle" id="colorPot" data-clipboard-text="">
             <i class="material-icons" id="centerPot">wb_sunny</i>
         </div>
     </div>
@@ -21,23 +21,23 @@
     <br>
     <!--The Pickers-->
     <div class="mdl-grid container">
+        <!--RED-->
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
-            <div id="redValueArea"></div>
-            <div class="circle grow" onclick="valuePopUp()" id="red">
-               <!-- <form action="#">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="number" min="0" max="100" value="0" id="redVal">
-                        <label class="mdl-textfield__label" for="redVal">Red Value (0-100)</label>
-                    </div>
-                </form>-->
-
+            <div class="circle grow" onclick="" id="red">
+                <form action="#" class="centerofCircle">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label label">
+                    <input class="mdl-textfield__input" type="number" min="0" max="100" id="redVal">
+                    <label class="mdl-textfield__label" for="redVal">Red Value (0-100)</label>
+                </div>
+            </form>
             </div>
             <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="red">
                 Click Here to Manually Change RED Color Values
             </div>
-
             <input class="mdl-slider mdl-js-slider" id="redSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
+
+        <!--GREEN-->
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
             <div class="circle grow" id="green"></div>
             <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="green">
@@ -45,6 +45,8 @@
             </div>
             <input class="mdl-slider mdl-js-slider" id="greenSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
+
+        <!--BLUE-->
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
             <div class="circle grow" id="blue"></div>
             <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="blue">
@@ -64,6 +66,8 @@
             <p>Made with Material Design Lite, HTML, CSS, Javascript and a dash of awesomeness.</p>
         </div>
     </footer>
+
+    <script src="bower_components/clipboard/dist/clipboard.min.js"></script>
     <script src="bower_components/material-design-lite/material.min.js"></script>
     <script src="colors.js"></script>
 </body>

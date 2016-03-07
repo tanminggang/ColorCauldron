@@ -1,5 +1,5 @@
 # ColorCauldron
-Version 1.1 - Colorific
+Version 1.2 - Krazy Kolors
 
 Welcome to the development page of the Color Cauldron!
 The version found here is the development, unstable version of my web page, the Color Cauldron.
