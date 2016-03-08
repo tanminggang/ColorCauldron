@@ -1,20 +1,14 @@
 # ColorCauldron
-Version 1.3 - Krazy Kolors
+Version 1.5 - Colorific! - Stable
 
-Welcome to the development page of the Color Cauldron!
-The version found here is the development, unstable version of my web page, the Color Cauldron.
+Welcome to the GitHub page of the Color Cauldron!
 
-The latest stable version of the Color Cauldron will be hosted shortly.
+The latest stable version of the Color Cauldron will be hosted at http://www.saaliklok.com/colorcauldron.
 
-A color-mixing web app that creates colors based on rgb values.
+This is a color-mixing web app that creates colors based on values of Red, Green and Blue.
 
-The license on this code is the flexible MIT License.
-You may take a look at the code, and if you decide to use it anywhere, please send a link to my website:
-http://www.saaliklok.com.
-
-Thanks!
+Enjoy!
 
 @saaliklok
 
 www.saaliklok.com
-

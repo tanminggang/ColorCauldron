@@ -47,7 +47,6 @@ function convertToRGB(r, g, b){
 function findBackgroundColor(){
    var potColor = document.getElementById("colorPot").style.backgroundColor;
     document.getElementById("colorPot").setAttribute("data-clipboard-text", potColor);
-   //alert("Pot Color: " + potColor);
 }
 
 function copyColor(){
@@ -61,19 +60,3 @@ function copyColor(){
         }
     );
 }
-
-
-/*
-var form = '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">'+
-    '<input class="mdl-textfield__input" type="number" min="0" max="100" value="0" id="redVal">'+
-    '<label class="mdl-textfield__label" for="redVal">Red Value (0-100)</label>'+
-'</div>';
-
-var on = false;
-function valuePopUp(){
-    if(on == false){
-    document.getElementById("redValueArea").innerHTML = form;
-        on= true;
-    }
-    else{}
-}*/

@@ -10,7 +10,9 @@
 </head>
 <body>
     <b><h1 class="centertext">The Color Cauldron</h1></b>
-    <p class="centertext">Welcome to the Color Cauldron. To mix your perfect color, choose the red, green and blue values in the circles below.</p>
+    <p class="centertext">To mix your perfect color, use the sliders for Red, Green and Blue to adjust and
+        click COLOR CHANGE to make your perfect color. <br>Want to copy your color? No problem.
+        Click on the main color in the center wheel to automatically copy your color!</p>
     <!--The Center Circle-->
     <div class="mdl-grid">
         <div class="spinning circle" id="colorPot" onclick="copyColor()">
@@ -30,35 +32,19 @@
     <div class="mdl-grid container">
         <!--RED-->
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
-            <div class="circle grow" onclick="" id="red">
-                <form action="#" class="centerofCircle">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label label">
-                    <input class="mdl-textfield__input" type="number" min="0" max="100" id="redVal">
-                    <label class="mdl-textfield__label" for="redVal">Red Value (0-100)</label>
-                </div>
-            </form>
-            </div>
-            <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="red">
-                Click Here to Manually Change RED Color Values
-            </div>
+            <div class="circle grow" onclick="" id="red"></div>
             <input class="mdl-slider mdl-js-slider" id="redSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
 
         <!--GREEN-->
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
             <div class="circle grow" id="green"></div>
-            <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="green">
-                Click Here to Manually Change GREEN Color Values
-            </div>
             <input class="mdl-slider mdl-js-slider" id="greenSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
 
         <!--BLUE-->
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
             <div class="circle grow" id="blue"></div>
-            <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="blue">
-                Click Here to Manually Change BLUE Color Values
-            </div>
             <input class="mdl-slider mdl-js-slider" id="blueSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
     </div>
