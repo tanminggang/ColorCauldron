@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="custom.css">
 </head>
-<body onload="initColor()">
+<body>
     <b><h1 class="centertext">The Color Cauldron</h1></b>
     <p class="centertext">Welcome to the Color Cauldron. To mix your perfect color, choose the red, green and blue values in the circles below.</p>
     <!--The Center Circle-->
     <div class="mdl-grid">
-        <div class="spinning circle" id="colorPot" data-clipboard-text="">
+        <div class="spinning circle" id="colorPot" onclick="copyColor()">
             <i class="material-icons" id="centerPot">wb_sunny</i>
+        </div>
+        <div class="mdl-tooltip mdl-tooltip--left mdl-tooltip--large sansFont" for="colorPot">
+            Click Here to Copy Your Color
+        </div>
+        <div aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar centertext">
+            <div class="mdl-snackbar__text"></div>
+            <button type="button" class="mdl-snackbar__action"></button>
         </div>
     </div>
     <br>
