@@ -60,3 +60,9 @@ function copyColor(){
         }
     );
 }
+
+function checkScreen(){
+    if(screen.width <= 699){
+        alert("Sorry, the mobile version of this website is still in development. Try it on a computer for now!")
+    }
+}
