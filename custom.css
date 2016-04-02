@@ -96,6 +96,14 @@ body{
     color:white;
 }
 
+.colorLabel{
+    color:#ffffff;
+}
+
+.colorInput{
+  color:#ffffff;
+}
+
 /*Animations*/
 
 .grow:hover{
