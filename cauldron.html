@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="dialog-polyfill.css"
+    <script src="dialog-polyfill.js"></script>
 </head>
 <body>
     <b><h1 class="centertext">The Color Cauldron</h1></b>
@@ -26,38 +28,46 @@
     </div>
     <br>
     <br>
+
     <!--The Pickers-->
     <div class="mdl-grid container">
         <!--RED-->
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
             <div class="circle grow" onclick="" id="red">
                 <form action="#" class="centerofCircle">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label label">
-                    <input class="mdl-textfield__input" type="number" min="0" max="100" id="redVal">
-                    <label class="mdl-textfield__label" for="redVal">Red Value (0-100)</label>
-                </div>
-            </form>
+                    <label class="colorLabel" for="redVal" class="sansFont">Red Value (0-100)</label>
+                    <input class="colorInput" id="redInput" type="number" min="0" max="100" id="redVal">
+                </form>
             </div>
             <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="red">
-                Click Here to Manually Change RED Color Values
+                Change RED Color Values
             </div>
             <input class="mdl-slider mdl-js-slider" id="redSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
 
         <!--GREEN-->
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
-            <div class="circle grow" id="green"></div>
+            <div class="circle grow" id="green">
+              <form action="#" class="centerofCircle">
+                  <label class="colorLabel" for="greenVal" class="sansFont">Green Value (0-100)</label>
+                  <input class="colorInput" id="greenInput" type="number" min="0" max="100" id="greenVal">
+              </form>
+            </div>
             <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="green">
-                Click Here to Manually Change GREEN Color Values
+                Change GREEN Color Values
             </div>
             <input class="mdl-slider mdl-js-slider" id="greenSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
 
         <!--BLUE-->
         <div class="mdl-cell mdl-cell--2-col-desktop centered">
-            <div class="circle grow" id="blue"></div>
+            <div class="circle grow" id="blue">
+              <form action="#" class="centerofCircle">
+                  <label class="colorLabel" for="blueVal" class="sansFont">Blue Value (0-100)</label>
+                  <input class="colorInput" id="blueInput" type="number" min="0" max="100" id="blueVal">
+              </form></div>
             <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large sansFont" for="blue">
-                Click Here to Manually Change BLUE Color Values
+                Change BLUE Color Values
             </div>
             <input class="mdl-slider mdl-js-slider" id="blueSlider" type="range" min="0" max="255" value="0" tabindex="0">
         </div>
