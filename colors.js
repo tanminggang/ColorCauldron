@@ -9,6 +9,7 @@ var blueVal = 0;
     red.addEventListener("mousemove", function () {
         redVal = red.value;
         document.getElementById("red").style.backgroundColor = "rgb("+redVal+", 0, 0)";
+        document.getElementById("redValueText").style.backgroundColor = "rgb("+redVal+", 0, 0)";
         return redVal;
     });
 
@@ -17,6 +18,7 @@ var blueVal = 0;
     green.addEventListener("mousemove", function () {
         greenVal = green.value;
         document.getElementById("green").style.backgroundColor = "rgb(0,"+greenVal+", 0)";
+        document.getElementById("greenValueText").style.backgroundColor = "rgb(0,"+greenVal+", 0)";
         return greenVal;
     });
 
@@ -24,8 +26,15 @@ var blueVal = 0;
     blue.addEventListener("mousemove", function () {
         blueVal = blue.value;
         document.getElementById("blue").style.backgroundColor = "rgb(0, 0,"+blueVal+")";
+        document.getElementById("blueValueText").style.backgroundColor = "rgb(0, 0,"+blueVal+")";
         return blueVal;
     });
+
+    var bodyID = document.getElementById('bodyid');
+    bodyID.addEventListener("mousemove", function() {
+        document.getElementById("colorPot").style.backgroundColor = "rgb(" + redVal + "," + greenVal + "," + blueVal + ")";
+        document.getElementById("myLink").style.color = "rgb(" + redVal + "," + greenVal + "," + blueVal + ")";
+    })
 
 function changeColor() {
     document.getElementById("colorPot").style.backgroundColor = "rgb(" + redVal + "," + greenVal + "," + blueVal + ")";

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Color Cauldron</title>
+    <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body onload="checkScreen()" id="bodyid">
+    <b><h1 class="centertext">The Color Cauldron</h1></b>
+    <p class="centertext">To mix your perfect color, use the sliders for Red, Green and Blue to adjust and
+        click COLOR CHANGE to make your perfect color. <br>Want to copy your color? No problem.
+        Click on the main color in the center wheel to automatically copy your color!</p>
+    <!--The Center Circle-->
+    <div class="mdl-grid">
+        <div class="spinning circle" id="colorPot" onclick="copyColor()">
+            <i class="material-icons" id="centerPot">wb_sunny</i>
+        </div>
+        <div class="mdl-tooltip mdl-tooltip--left mdl-tooltip--large sansFont" for="colorPot">
+            Click Here to Copy Your Color
+        </div>
+        <div aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar centertext">
+            <div class="mdl-snackbar__text"></div>
+            <button type="button" class="mdl-snackbar__action"></button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--The Pickers-->
+    <div class="mdl-grid container">
+        <!--RED-->
+        <div class="mdl-cell mdl-cell--2-col-desktop centered">
+            <div class="circle grow" onclick="" id="red">
+                <form class="insideForm centerofCircle">
+                    <input type="text" id="redValueText" type="range" min="0" max="100" value="0">
+                </form>
+            </div>
+            <input class="mdl-slider mdl-js-slider" id="redSlider" type="range" min="0" max="255" value="0" tabindex="0">
+        </div>
+
+        <!--GREEN-->
+        <div class="mdl-cell mdl-cell--2-col-desktop centered">
+            <div class="circle grow" id="green">
+              <form class="insideForm centerofCircle">
+                  <input type="text" id="greenValueText" type="range" min="0" max="100" value="0">
+              </form>
+            </div>
+            <input class="mdl-slider mdl-js-slider" id="greenSlider" type="range" min="0" max="255" value="0" tabindex="0">
+        </div>
+
+        <!--BLUE-->
+        <div class="mdl-cell mdl-cell--2-col-desktop centered">
+            <div class="circle grow" id="blue">
+              <form class="insideForm centerofCircle">
+                  <input type="text" id="blueValueText" type="range" min="0" max="100" value="0">
+              </form>
+            </div>
+            <input class="mdl-slider mdl-js-slider" id="blueSlider" type="range" min="0" max="255" value="0" tabindex="0">
+        </div>
+    </div>
+
+    <!--The Button that Changes the Pot's Color-->
+    <button onclick="changeColor()" class="smtext sansFont centered mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="changeButton">Color Change</button>
+
+    <!--Mini-Footer-->
+    <footer class="mdl-mini-footer">
+        <div class="centered centertext smtext mdl-mini-footer__left-section">
+            <div class="mdl-logo"><a id="myLink" href="http://www.saaliklok.com">&copy; Saalik Lokhandwala</a></div>
+            <p>Made with Material Design Lite, HTML, CSS, Javascript and a dash of awesomeness.</p>
+        </div>
+    </footer>
+
+    <script src="bower_components/clipboard/dist/clipboard.min.js"></script>
+    <script src="bower_components/material-design-lite/material.min.js"></script>
+    <script src="colors.js"></script>
+</body>
+</html>
